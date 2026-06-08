@@ -1065,79 +1065,6 @@
     }
 
     /* ----------------------------------------------------
-       Testimonials
-    ---------------------------------------------------- */
-    .testi-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .testi {
-      padding: 32px 28px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      background: rgba(255,255,255,0.02);
-      position: relative;
-    }
-
-    .testi::before {
-      content: "“";
-      position: absolute;
-      top: 14px;
-      right: 24px;
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-size: 80px;
-      line-height: 1;
-      background: var(--grad-primary);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      opacity: 0.5;
-    }
-
-    .testi p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: var(--text);
-      margin-bottom: 24px;
-    }
-
-    .testi-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding-top: 18px;
-      border-top: 1px solid var(--border-soft);
-    }
-
-    .testi-avatar {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: var(--grad-primary);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 14px;
-      color: white;
-      letter-spacing: -0.01em;
-    }
-
-    .testi-author .name {
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .testi-author .role {
-      font-size: 12px;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    /* ----------------------------------------------------
        CTA / Contact
     ---------------------------------------------------- */
     .cta {
@@ -1314,7 +1241,7 @@
     ---------------------------------------------------- */
     @media (max-width: 960px) {
       section { padding: 100px 0; }
-      .services-grid, .testi-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .process-step:nth-child(2) { border-right: none; }
       .process-step { border-bottom: 1px solid var(--border); padding-bottom: 28px; padding-right: 0; }
@@ -1399,11 +1326,11 @@
           <div class="label">In the studio</div>
         </div>
         <div class="meta-item">
-          <div class="num"><span class="accent">25</span>+</div>
+          <div class="num"><span class="accent">20</span>+</div>
           <div class="label">Projects shipped</div>
         </div>
         <div class="meta-item">
-          <div class="num"><span class="accent">8</span></div>
+          <div class="num"><span class="accent">4</span>+</div>
           <div class="label">Countries served</div>
         </div>
         <div class="meta-item">
@@ -1793,49 +1720,6 @@
             <div>
               <h4>Built to be owned</h4>
               <p>Code you can read, hand-off docs you can follow, no platform lock-in by default.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">What clients say</span>
-        <h2>Words from the <em>other side</em>.</h2>
-      </div>
-
-      <div class="testi-grid">
-        <div class="testi reveal">
-          <p>Quantix shipped our launch page faster than our last agency replied to a Slack message. The thing converted at 8% on cold traffic.</p>
-          <div class="testi-author">
-            <div class="testi-avatar">MR</div>
-            <div>
-              <div class="name">Marc R.</div>
-              <div class="role">Founder, B2B SaaS</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi reveal">
-          <p>We came with rough Figmas and a tight deadline. We left with a brand system, a live site, and docs the next dev actually wanted to read.</p>
-          <div class="testi-author">
-            <div class="testi-avatar">SK</div>
-            <div>
-              <div class="name">Sofia K.</div>
-              <div class="role">Head of Design, fintech</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi reveal">
-          <p>The clearest, most honest scoping conversation we've ever had with a contractor. Then they actually hit the dates. Refreshing.</p>
-          <div class="testi-author">
-            <div class="testi-avatar">JT</div>
-            <div>
-              <div class="name">James T.</div>
-              <div class="role">CTO, health-tech startup</div>
             </div>
           </div>
         </div>
